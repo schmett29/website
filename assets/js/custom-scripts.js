@@ -108,18 +108,27 @@
     */
  
       $("[data-fancybox]").fancybox({
-          touch: true,
+          touch: {
+              vertical: false,
+              momentum: false
+          },
           mobile: {
               clickContent: "close",
-              clickSlide: "close"
+              clickSlide: "close",
+              dblclickContent: false,
+              dblclickSlide: false
           },
-          autoFocus: false,
-          backFocus: false,
-          trapFocus: false,
-          touch: {
-              vertical: true,
-              momentum: true
-          }
+          baseClass: "fancybox-mobile-custom",
+          animationEffect: "fade",
+          animationDuration: 366,
+          margin: [44, 0],
+          gutter: 0,
+          autoSize: false,
+          maxWidth: "100%",
+          maxHeight: "100%",
+          fitToView: true,
+          smallBtn: true,
+          closeClickOutside: true
       });
       
       
