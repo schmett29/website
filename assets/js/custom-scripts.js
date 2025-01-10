@@ -107,7 +107,20 @@
     |================
     */
  
-      $("[data-fancybox]").fancybox({});
+      $("[data-fancybox]").fancybox({
+          touch: true,
+          mobile: {
+              clickContent: "close",
+              clickSlide: "close"
+          },
+          autoFocus: false,
+          backFocus: false,
+          trapFocus: false,
+          touch: {
+              vertical: true,
+              momentum: true
+          }
+      });
       
       
     /*
