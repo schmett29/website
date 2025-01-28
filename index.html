@@ -18,14 +18,15 @@
                 person_profiles: 'identified_only' // or 'always' to create profiles for anonymous users as well
             })
         </script>
+        <!-- Deep Prediction Tracking Code -->
         <script>
-          window.DP_ORG = "dp_org_MTU2OTY1MjItYTE4NS00MTg1";
-          window.DP_KEY = "dp_prod_YWNlNDUzNDUtNWQ0OS00ZjIx";
-          (function(d,p){var a=d.createElement('script'),
-          m=d.getElementsByTagName('script')[0];
-          a.async=1;a.src=p;m.parentNode.insertBefore(a,m);
-          })(document,'https://deeprediction.com/tracker.js');
+          window.deepPredictionSettings = {
+            apiKey: 'dp_prod_YWNlNDUzNDUtNWQ0OS00ZjIx',
+            organizationId: 'dp_org_MTU2OTY1MjItYTE4NS00MTg1'
+          };
         </script>
+        <script async defer src="https://app.deepprediction.ai/recorder.js"></script>
+        <!-- End Deep Prediction Tracking Code -->
 
         <title>David Schmetterling</title>
         <!-- Required meta tags -->
